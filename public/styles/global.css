@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+html {
+    --black: #0d114f;
+    --white: #fafafa;
+    --red:#E83F5B;
+    --light-blue: #e0ecff;
+    --blue: #3485FF;
+    --background: #FBFCFF;
+    --overlay: #040911;
+    --icons-details: #A5B0C1;
+    --grey-dark: #4D5E77;
+    --grey-blue: #7a7f86;
+    --grey-medium: #EAECF2;
+    --grey-light: #E5EAF1;
+
+    font-size: 62.5%; /*configura todas as fontes para 10px - O padrão do navegador é 16px, 10px é 62,5%. Dessa forma quando ajustar as outras fontes em rem é só relacionar com 10px Ex: fonte em 28px = 28/10 = 2.8 rem */
+
+}
+
+body{
+    display: flex;
+    height: 100vh; /*vh = view height ou seja o tamanho da tela. Assim se adapta a qualquer tela*/
+    /*width: 100vw; vw = view widht */
+    background: var(--background);
+}
+
+body, button, input, textarea {
+    /*clamp: Intervalo de tamanho, ou seja, no menor tamanho de tela é 14px, no médio 1.6rem e numa tela gigante 2vw*/
+    font-size: clamp( 14px, 1.6rem, 2vw);
+    font-family: 'Open Sans', sans-serif ;
+}
+.content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.sr-only {
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+input, button, .button {
+    border-radius: .8rem;
+    height: 5rem;
+    
+}
+
+button, .button {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue);
+    color: var(--white);
+    transition: filter .2%;
+    cursor: pointer;
+}
+
+button.hover, .button:hover{
+    filter: brightness(1.2);
+}
+
+button > img,
+.button > img {
+    margin-right: 1rem;
+    width: 2rem;
+}
+
+button.outlined, .button.outlined {
+    background: var (var(--white));
+    color: var(--blue);
+    border: .2rem solid var(--blue);
+}
+
+button.red, 
+.button.red {
+    background: var(--red);
+    color: var(--white)
+}
+
+button.grey,
+.button.grey {
+    background: var(--grey-light);
+    color: var(--grey-dark)
+}
+
+/***   HEADER  ***/
+
+.content header {
+    width: 80%;
+    margin: 3.5rem auto;
+}
+
+
+.content header  img {
+    width: 16.7rem;
+}
