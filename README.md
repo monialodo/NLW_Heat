@@ -8,9 +8,7 @@
    * [Sobre](#Sobre)
    * [Tabela de Conteudo](#tabela-de-conteudo)
    * [Features](#features)
-   * [Como usar](#como-usar)
-      * [Pre Requisitos](#pre-requisitos)
-      * [Como Iniciar](#rodando-o-back-end-servidor)
+   * [Como Iniciar](#rodando-o-projeto)
    * [Tecnologias](#tecnologias)
 
 
